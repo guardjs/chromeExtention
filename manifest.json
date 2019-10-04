@@ -1,0 +1,37 @@
+{
+    "name": "guardjs",
+    "version": "0.0.28",
+    "description": "Declare whether the page has any malicious javascript file!",
+    "manifest_version": 2,
+    "permissions": [
+        "tabs",
+        "activeTab"
+    ],
+    "background": {
+        "scripts": [
+            "src/script/browserEvents.js",
+            "src/script/content.js",
+            "src/script/mainCheck.js"
+        ]
+    },
+    "browser_action": {
+        "default_icon": "src/icon/blue.png",
+        "default_title": "guardjs",
+        "default_popup": "page/popup/index.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "src/script/content.js"
+            ]
+        }
+    ],
+    "icons": {
+        "16": "src/icon/icon16.png",
+        "48": "src/icon/icon48.png",
+        "128": "src/icon/icon128.png"
+    }
+}
