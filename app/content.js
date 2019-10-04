@@ -5,6 +5,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
   var urlHash = {}, links = document.links
   for (var i = 0; i < links.length; i++) {
     var domain = links[i].href.split('/')[2]
+    debugger
     urlHash[domain] = (urlHash[domain])
       ? urlHash[domain] + 1
       : 1

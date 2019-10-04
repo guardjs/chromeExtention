@@ -33,5 +33,15 @@
         "16": "src/icon/icon16.png",
         "48": "src/icon/icon48.png",
         "128": "src/icon/icon128.png"
+    },
+    "options_page": "options.html",
+    "commands": {
+        "toggle-popup": {
+            "suggested_key": {
+                "default": "Alt+Shift+E",
+                "mac": "Command+Shift+E"
+            },
+            "description": "Show extension popup"
+        }
     }
 }

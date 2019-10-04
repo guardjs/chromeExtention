@@ -13,7 +13,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     if (!request.data.hasOwnProperty(key)) return 0
     document.querySelector('#urlTable > tbody')
       .innerHTML += `<tr><td>${key}</td><td>${request.data[key]}</td></tr>`
-    if (request.data[key] <= maxLinks) return 0
+    if (request.data[key] <= maxLinks) continue
     maxLinks = request.data[key]
     urlWithMaxLinks = key
   }
