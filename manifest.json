@@ -9,9 +9,9 @@
     ],
     "background": {
         "scripts": [
-            "src/script/browserEvents.js",
-            "src/script/content.js",
-            "src/script/mainCheck.js"
+            "app/browserEvents.js",
+            "app/content.js",
+            "app/mainCheck.js"
         ]
     },
     "browser_action": {
@@ -25,7 +25,7 @@
                 "<all_urls>"
             ],
             "js": [
-                "src/script/content.js"
+                "app/content.js"
             ]
         }
     ],

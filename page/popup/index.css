@@ -1,0 +1,11 @@
+body {
+  background: rgb(88, 100, 133);
+  padding: 10px;
+  color: rgb(201, 201, 201);
+  font: 1em tahoma;
+}
+
+table {
+  box-shadow: 4px 4px 4px rgb(107, 107, 117);
+  border: 1px solid #555;
+}
