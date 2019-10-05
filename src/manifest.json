@@ -1,6 +1,6 @@
 {
     "name": "guardjs",
-    "version": "0.0.3",
+    "version": "0.0.31",
     "description": "Declare whether the page has any malicious javascript file!",
     "manifest_version": 2,
     "icons": {
