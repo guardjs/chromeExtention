@@ -4,9 +4,9 @@
     "description": "Declare whether the page has any malicious javascript file!",
     "manifest_version": 2,
     "icons": {
-        "16": "src/icon/icon16.png",
-        "48": "src/icon/icon48.png",
-        "128": "src/icon/icon128.png"
+        "16": "icon/icon16.png",
+        "48": "icon/icon48.png",
+        "128": "icon/icon128.png"
     },
     "permissions": [
         "tabs",
@@ -21,7 +21,7 @@
         ]
     },
     "browser_action": {
-        "default_icon": "src/icon/blue.png",
+        "default_icon": "icon/blue.png",
         "default_title": "guardjs",
         "default_popup": "page/popup/index.html"
     },
@@ -35,7 +35,7 @@
             ]
         }
     ],
-    "options_page": "options.html",
+    "options_page": "page/option/index.html",
     "commands": {
         "toggle-popup": {
             "suggested_key": {
