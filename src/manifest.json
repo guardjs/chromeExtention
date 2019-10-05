@@ -1,14 +1,20 @@
 {
     "name": "guardjs",
-    "version": "0.0.28",
+    "version": "0.0.3",
     "description": "Declare whether the page has any malicious javascript file!",
     "manifest_version": 2,
+    "icons": {
+        "16": "src/icon/icon16.png",
+        "48": "src/icon/icon48.png",
+        "128": "src/icon/icon128.png"
+    },
     "permissions": [
         "tabs",
         "activeTab"
     ],
     "background": {
         "scripts": [
+            "app/init.js",
             "app/browserEvents.js",
             "app/content.js",
             "app/mainCheck.js"
@@ -29,11 +35,6 @@
             ]
         }
     ],
-    "icons": {
-        "16": "src/icon/icon16.png",
-        "48": "src/icon/icon48.png",
-        "128": "src/icon/icon128.png"
-    },
     "options_page": "options.html",
     "commands": {
         "toggle-popup": {

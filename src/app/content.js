@@ -1,5 +1,6 @@
 
 
+/** all content should provide via browser goes here : like links of page and files */
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
   if (request.message !== "fetch_top_domains") return 0
   var urlHash = {}, links = document.links
