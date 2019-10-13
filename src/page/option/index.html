@@ -1,12 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Guardjs options</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Clean and responsive administration panel">
+  <meta name="keywords" content="Admin,Panel,HTML,CSS,XML,JavaScript">
+  <meta name="author" content="easa">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../lib/uikit/css/uikit.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  This is option page of Guardjs.github.io
+  <div uk-sticky class="uk-navbar-container tm-navbar-container uk-active">
+    <div class="uk-container uk-container-expand">
+      <nav uk-navbar>
+        <div class="uk-navbar-left">
+          <a id="sidebar_toggle" class="uk-navbar-toggle" uk-navbar-toggle-icon></a>
+          <a href="#" class="uk-navbar-item uk-logo">
+            Options of Guardjs extension
+          </a>
+        </div>
+        <div class="uk-navbar-right uk-light">
+          <ul class="uk-navbar-nav">
+            <li class="uk-active">
+              <a href="#">Quick access &nbsp;<span class="ion-ios-arrow-down"></span></a>
+              <div uk-dropdown="pos: bottom-right; mode: click; offset: -17;">
+                <ul class="uk-nav uk-navbar-dropdown-nav">
+                  <li class="uk-nav-header">Options</li>
+                  <li><a href="#">Edit Profile</a></li>
+                  <li class="uk-nav-header">Actions</li>
+                  <li><a href="#">Lock</a></li>
+                  <li><a href="#">Quit</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div id="sidebar" class="tm-sidebar-left uk-background-default">
+    <ul class="uk-nav uk-nav-default">
+      <li class="uk-nav-header">
+        Features
+      </li>
+      <li><a href="#">Syntax</a></li>
+      <li><a href="#">Graph</a></li>
+      <li><a href="#">Tables</a></li>
+
+      <li class="uk-nav-header">
+        Algorithms
+      </li>
+      <li><a href="#">Tree</a></li>
+      <li><a href="#">Model</a></li>
+      <li><a href="#">Article</a></li>
+    </ul>
+  </div>
+  <div class="content-padder content-background">
+    <div class="uk-section-small uk-section-default header">
+      <div class="uk-container uk-container-large">
+        <h1><span class="ion-speedometer"></span> Dashboard</h1>
+        <p>
+          All in one view: statistics about all features and files crossed so far.
+        </p>
+        <ul class="uk-breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li><span href="#">Dashboard</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="uk-section-small">
+      <div class="uk-container uk-container-large">
+        <div uk-grid class="uk-child-width-1-1@s uk-child-width-1-2@m uk-child-width-1-4@xl">
+          <div>
+            <div class="uk-card uk-card-default uk-card-body ">
+              <span class="statistics-text">Website were opened</span><br />
+              <span class="statistics-number">
+                14
+                <span class="uk-label uk-label-success">
+                  8% <span class="ion-arrow-up-c"></span>
+                </span>
+              </span>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-body">
+              <span class="statistics-text">Url Traffic</span><br />
+              <span class="statistics-number">
+                1230
+                <span class="uk-label uk-label-danger">
+                  13% <span class="ion-arrow-down-c"></span>
+                </span>
+              </span>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-body">
+              <span class="statistics-text">Total threat</span><br />
+              <span class="statistics-number">
+                2
+                <span class="uk-label uk-label-success">
+                  100% <span class="ion-arrow-up-c"></span>
+                </span>
+              </span>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-body">
+              <span class="statistics-text">Total files</span><br />
+              <span class="statistics-number">
+                604
+                <span class="uk-label uk-label-success">
+                  26% <span class="ion-arrow-up-c"></span>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../lib/jquery-3.4.1.min.js"></script>
+  <script src="../lib/uikit/js/uikit.min.js"></script>
+  <script src="../lib/uikit/js/uikit-icons.min.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
