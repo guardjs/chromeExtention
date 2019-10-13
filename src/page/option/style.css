@@ -125,3 +125,10 @@ html, body{
  background-color: #d1eefe;
  color: #1e87f0;
 }
+
+.uk-search-navbar .uk-search-input{
+    color: #ffffff;
+}
+.uk-navbar-container>.uk-container .nav-overlay.uk-navbar-left{
+    margin: 0 20px;
+}
